@@ -129,6 +129,7 @@ body {
     background-color: darkred
   }
 
+
   .flexContainer2 {
     display: flex;
     flex-direction: row;
@@ -141,7 +142,6 @@ body {
     background-color: #ffffff;
     color: black;
 }
-
 
 .flexItem2text {
     flex: 50%;
@@ -172,21 +172,80 @@ body {
     margin-bottom: 50px;
 }
 
+.flexContainer3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #4882A7;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family:'Poppins', sans-serif ;
+}
+
 .flexItem3Imgs {
     display: flex;
     flex-wrap: wrap;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.flexItem3 {
+    text-align: center;
+    color: #eee;
+}
+
+.flexItem3 h1 {
+    font-size: 50px;
+
+}
+
+.flexItem3 h2 {
+    font-size: 20px;
+
 }
 
 .imageWrap {
-    width: 50%;
+    width: 20%;
+    height: 300px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #eee;
+    font-family:'Poppins', sans-serif ;
+    border-radius: 20px;
 }
 
 .imageWrap img {
-    width: 100%;
+    width: auto;
+    height: 100%;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+
+.imageWrap h3 {
+    margin-top: 10px;
+    font-size: 10px;
 }
 
 .imageWrap p {
-    margin-top: 50px;
+    margin-top: 10px;
+    font-size: 10px;
 }
+
+.flexContainer3 .red-button {
+    width: 270px; 
+    height: 70px; 
+    background-color: red; 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+    margin-top: 150px;
+  }
+  
+  .red-button:hover {
+    background-color: darkred
+  }
