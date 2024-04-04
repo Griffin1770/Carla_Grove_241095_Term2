@@ -10,7 +10,8 @@ body {
     margin: 0;
     background-image: url(../assets/images/homePageHeader.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     max-height: 100%;
  } 
 
@@ -300,5 +301,503 @@ body {
     background-color: darkred
   }
 
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .box1Logo {
+    text-align: left; 
+    margin-left: 150px;
+    margin-top: 15px;
+  }
+  
+  .box1Logo img {
+    display: block; 
+    max-width: 250px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  .box1Logo h2 {
+    margin-top: 10px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+  }
+
+  .box2Company {
+    font-family: 'Poppins', sans-serif; 
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .box2Company ul {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  .box2Company h2 {
+    display: block;
+    font-size: 20px;
+  }
+
+  .box2Company li {
+    list-style-type: none;
+  }
+  
+
+  .box2Company ul li a {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .box3Socials {
+    text-align: center;
+    margin-right: 150px;
+  }
+
+  .box3Socials h2 {
+    margin-right: 350px;
+  }
+ 
+  .socialImgs {
+    display: flex;
+    justify-content: center;
+    margin-right: 170px;
+  }
+
+  .socialImgs img {
+    max-width: 80px;
+    height: auto;
+    margin: 0 10px;
+  }
+
+
+
+
+  .mars {
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #4882A7;
+    color: #eee;
+}
+
+.marsText1 {
+    flex: 50%;
+    flex-grow: 1;
+    text-align: left;
+    display: block;
+    margin-right: 350px; 
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+.marsText1 h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.marsImg img {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.marsImg {
+    position: relative;
+}
+
+.marsOverlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
+  
+  .marsOverlay p {
+    color: white; 
+    font-size: 18px;
+  }
+  
+  .marsImg:hover .marsOverlay {
+    opacity: 1; 
+  }
+
+.marsButton .red-button {
+    width: 270px; 
+    height: 70px; 
+    background-color: red; 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+  
+  .red-button:hover {
+    background-color: darkred
+  }
+
+  .marsButton .purple-button {
+    width: 150px; 
+    height: 70px; 
+    background-color: rgb(55, 16, 109); 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+
+  .purple-button:hover {
+    background-color:rgb(87, 38, 156) ;
+  }
+
+
+  
+  .neptune {
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #4882A7;
+    color: #eee;
+}
+
+.neptuneText1 {
+    flex: 50%;
+    flex-grow: 1;
+    text-align: left;
+    display: block;
+    margin-right: 350px; 
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+.neptuneText1 h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.neptuneImg img {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.neptuneImg {
+    position: relative;
+}
+
+.neptuneOverlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
+  
+  .neptuneOverlay p {
+    color: white; 
+    font-size: 18px;
+  }
+  
+  .neptuneImg:hover .neptuneOverlay {
+    opacity: 1; 
+  }
+
+
+.neptuneButton .red-button {
+    width: 270px; 
+    height: 70px; 
+    background-color: red; 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+  
+  .red-button:hover {
+    background-color: darkred
+  }
+
+  .neptuneButton .purple-button {
+    width: 150px; 
+    height: 70px; 
+    background-color: rgb(55, 16, 109); 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+
+  .purple-button:hover {
+    background-color:rgb(87, 38, 156) ;
+  }
+
+
+
+  
+.jupiter {
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #4882A7;
+    color: #eee;
+}
+
+.jupiterText1 {
+    flex: 50%;
+    flex-grow: 1;
+    text-align: left;
+    display: block;
+    margin-right: 350px; 
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+.jupiterText1 h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.jupiterImg img {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.jupiterImg {
+    position: relative;
+}
+
+.jupiterOverlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
+  
+  .jupiterOverlay p {
+    color: white; 
+    font-size: 18px;
+  }
+  
+  .jupiterImg:hover .jupiterOverlay {
+    opacity: 1; 
+  }
+
+
+.jupiterButton .red-button {
+    width: 270px; 
+    height: 70px; 
+    background-color: red; 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+  
+  .red-button:hover {
+    background-color: darkred
+  }
+
+  .jupiterButton .purple-button {
+    width: 150px; 
+    height: 70px; 
+    background-color: rgb(55, 16, 109); 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+
+  .purple-button:hover {
+    background-color:rgb(87, 38, 156) ;
+  }
+
+
+
+
+.saturn {
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #4882A7;
+    color: #eee;
+}
+
+.saturnText1 {
+    flex: 50%;
+    flex-grow: 1;
+    text-align: left;
+    display: block;
+    margin-right: 350px; 
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+.saturnText1 h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.saturnImg img {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.saturnImg {
+    position: relative;
+}
+
+.saturnOverlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
+  
+  .saturnOverlay p {
+    color: white; 
+    font-size: 25px;
+  }
+  
+  .saturnImg:hover .saturnOverlay {
+    opacity: 1; 
+  }
+
+
+.saturnButton .red-button {
+    width: 270px; 
+    height: 70px; 
+    background-color: red; 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+  
+  .red-button:hover {
+    background-color: darkred
+  }
+
+  .saturnButton .purple-button {
+    width: 150px; 
+    height: 70px; 
+    background-color: rgb(55, 16, 109); 
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 12px; 
+  }
+
+  .purple-button:hover {
+    background-color:rgb(87, 38, 156) ;
+  }
+
+.SF {
+    color: #eee;
+}
 
 
