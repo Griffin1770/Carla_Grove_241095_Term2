@@ -22,21 +22,36 @@ body {
 
  .bottomLeft h1 {
     position: absolute;
-    bottom: 8px;
+    bottom: 2px;
     left: 16px;
+    top: 770px;
     color: #D54A2F;
     margin-bottom: 50px;
     font-family:'Porter-sans-inline-block', sans-serif ;
+    text-align: center;
+    font-size: 50px;
  } 
+
+ .bottomLeft h2 {
+  position: absolute;
+  bottom: 20px;
+  top: 820px;
+  left: 16px;
+  color: #D54A2F;
+  margin-bottom: 50px;
+  font-family:'Porter-sans-inline-block', sans-serif ;
+  text-align: center;
+  font-size: 50px;
+} 
 
  .bottomLeft h3 {
     position: absolute ;
-    bottom: 8px;
-    left: 16px;
+    top: 910px;
+    left: 50px;
     margin-bottom: 20px;
-
     color:#4882A7;
     font-family:'Poppins', sans-serif ;
+    font-size: 30px;
  }
 
  .navContain {
@@ -46,13 +61,12 @@ body {
  }
 
  .backImg {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%; 
-  height: 600px; 
+  height: 110vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
   background-image: url('../assets/images/homePageHeader.png'); 
   background-size: cover; 
   background-position: center; 
@@ -131,20 +145,20 @@ body {
 
 
 .flexContainer {
-    display: flex;
-    flex-direction: row;
-    font-family:'Poppins', sans-serif ;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 925px;
-    background-color: #4882A7;
-    color: #eee;
+  display: flex;
+  flex-direction: row;
+  font-family:'Poppins', sans-serif ;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-color: #2583C3;
+  color: black;
 }
 
 
-.flexItem1text {
+.flexItem1text1 {
     flex: 50%;
     flex-grow: 1;
     text-align: center;
@@ -154,16 +168,17 @@ body {
     margin-left: 180px;
 }
 
-.flexItem1text h3 {
-    color: #E87E5B;
+.flexItem1text1 h3 {
+    color: #995B9A;
     font-size: 20px;
     text-align: center;
 }
 
-.flexItem1text h1 {
+.flexItem1text1 h1 {
     font-size: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     text-align: center;
+    color: #ffffff;
 }
 
 .flexItem1 img {
@@ -174,7 +189,7 @@ body {
     margin-bottom: 50px;
 }
 
-.flexItem1text .red-button {
+.flexItem1text1 .red-button {
     width: 270px; 
     height: 70px; 
     background-color: red; 
@@ -258,7 +273,6 @@ body {
 
 .flexItem3 h1 {
     font-size: 50px;
-
 }
 
 .flexItem3 h2 {
@@ -270,7 +284,6 @@ body {
 .imageWrap {
     width: 20%;
     height: 300px;
-    margin-right: 20px;
     margin-bottom: 10px;
     text-align: center;
     color: #eee;
@@ -284,20 +297,22 @@ body {
     padding-top: 20px ;
     padding-bottom: 20px ;
     margin-left: 150px;
+    padding-right: 30px;
 }
 
 .imageWrap h3 {
     margin-top: 10px;
     font-size: 25px;
-    margin-left: 150px;
+    text-align: center;
+    margin-left: 170px;
 }
-
 
 
 .imageWrap p {
     margin-top: 10px;
     font-size: 15px;
-    margin-left: 150px;
+    text-align: center;
+    margin-left: 170px;
 }
 
 .buttonContainer {
@@ -411,12 +426,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #4882A7;
     color: #eee;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .marsText1 {
@@ -426,7 +442,10 @@ body {
     display: block;
     margin-right: 350px; 
     margin-top: 0px;
+    margin-left: 5px;
     margin-left: 180px;
+    padding-left: 25px;
+    padding-right: 15px;
 }
 
 
@@ -463,13 +482,15 @@ body {
     margin-right: 10px;
     margin-left: 80px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     border-radius: 30px;
   }
   
   .marsOverlay p {
     color: white; 
     font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .marsImg:hover .marsOverlay {
@@ -515,12 +536,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     color: #000000;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .neptuneText1 {
@@ -574,6 +596,8 @@ body {
   .neptuneOverlay p {
     color: white; 
     font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .neptuneImg:hover .neptuneOverlay {
@@ -621,12 +645,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #995B9A;
     color: #eee;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .jupiterText1 {
@@ -680,6 +705,8 @@ body {
   .jupiterOverlay p {
     color: white; 
     font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .jupiterImg:hover .jupiterOverlay {
@@ -727,12 +754,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     color: #000000;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .saturnText1 {
@@ -786,6 +814,8 @@ body {
   .saturnOverlay p {
     color: white; 
     font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .saturnImg:hover .saturnOverlay {
@@ -838,12 +868,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #8B81CC;
     color: #eee;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .uranusText1 {
@@ -898,6 +929,8 @@ body {
   .uranusOverlay p {
     color: white; 
     font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .uranusImg:hover .uranusOverlay {
@@ -944,12 +977,13 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     color: #000000;
     margin-bottom: 80px;
+    padding-left: 150px;
 }
 
 .moonText1 {
@@ -957,9 +991,10 @@ body {
     flex-grow: 1;
     text-align: left;
     display: block;
-    margin-right: 350px; 
+    margin-right: 280px; 
     margin-top: 0px;
-    margin-left: 180px;
+    margin-left: 80px;
+    padding-left: 50px;
 }
 
 
@@ -1003,6 +1038,8 @@ body {
   .moonOverlay p {
     color: white; 
     font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .moonImg:hover .moonOverlay {
@@ -1068,41 +1105,37 @@ body {
     flex-direction: row;
     font-family:'Poppins', sans-serif ;
     font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 925px;
-    background-color: #4882A7;
-    color: #eee;
+    text-align: left;
+  
 }
 
 
 .flexItem1text {
     flex: 50%;
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
     display: block;
-    margin-right: 400px; 
+    margin-right: 100px; 
     margin-top: 0px;
-    margin-left: 180px;
+    margin-left: 100px;
 }
 
 .flexItem1text h3 {
-    color: #E87E5B;
+    color: #995B9A;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .flexItem1text h1 {
     font-size: 50px;
-    letter-spacing: 1px;
-    text-align: center;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #4882A7;
 }
 
 .flexItemC img {
     width: 100%;
-    margin-right: 10px;
-    margin-left: 80px;
+    margin-right: 70px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -1111,27 +1144,44 @@ body {
 .containerC {
     display: flex; 
     font-family: 'Poppins', sans-serif ;
+    color: #ffffff;
   }
   
-  .formC {
+  .formC2 {
     background-image: url('../assets/images/formBack.png'); 
     background-size: cover; 
-    padding: 20px; 
+    padding: 50px; 
     border-radius: 30px;
     margin-top: 90px;
+    width: 500px;
+    height: 800px;
+    margin-left: 250px;
   }
 
-  .formC input[type="name"], input[type="email"], input[type="subject"] {
-    width: 150px;
-    height: 100px;
-  }
   
+  .formC {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+
   .items {
     margin-right: 20px;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 150px;
     margin-top: 90px;
+  }
+
+  input[type="text"] {
+   width: calc(100% - 20px); 
+   padding: 14px; 
+   margin-bottom: 10px;
+   margin-top: 15px;
   }
   
   .itemC1 h1 {
@@ -1157,8 +1207,13 @@ body {
     color: #000000;
     font-size: 30px;
   }
+
+  .itemC1 {
+    margin-bottom: 100px;
+
+}
   
-  .formC .red-buttonC {
+  .formC2 .red-buttonC {
     width: 270px; 
     height: 70px; 
     background-color: red; 
@@ -1173,4 +1228,25 @@ body {
   
   .red-buttonC:hover {
     background-color: darkred
+  }
+
+  .centerF {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-family:'Porter-sans-inline-block', sans-serif ;
+    font-size: 40px;
+  }
+
+  .centerCH {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-family:'Porter-sans-inline-block', sans-serif ;
+    font-size: 40px;
+    text-align: center;
   }
