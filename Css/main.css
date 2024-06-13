@@ -1449,7 +1449,7 @@ span{
 }
 
 .shop {
-  background-color: #D32D4F;
+  background-color: #995B9A;
   border: none;
 }
 
@@ -1603,6 +1603,7 @@ box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
 .wrapper {
   width: 100%;
   background-color: #89bada;
+  padding-left: 700px;
 }
 
 #searchContainer {
@@ -1612,18 +1613,17 @@ box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
 #searchContainer input{
   background-color: transparent;
   width: 40%;
-  border-bottom: 2px solid #D32D4F;
   padding: 1em 0.3em;
 }
 
 #searchContainer input:focus{
-  border-bottom-color: #D54A2F;
+  border-bottom-color: #8B81CC;
 }
 
 #searchContainer button {
 width: 250px; 
 height: 65px; 
-background-color: #995B9A; 
+background-color: #8B81CC; 
 color: white; 
 font-family: 'Poppins', sans-serif; 
 font-weight: 600; 
@@ -1634,15 +1634,15 @@ justify-content: center;
 }
 
 .button-value {
-  border: 2px solid #D32D4F;
+  border: 2px solid #2583C3;
   padding: 1em 2.2em;
   border-radius: 3em;
-  background-color: #D32D4F;
+  background-color: #2583C3;
   cursor: pointer;
 }
 
 .activeSearch {
-  background-color: #D32D4F;
+  background-color: #2583C3;
   color: #ffffff;
 }
 
@@ -1676,7 +1676,7 @@ justify-content: center;
   font-weight: 500;
 }
 .hide {
-  display: none;
+  display: all;
 }
 
 
@@ -1755,3 +1755,62 @@ justify-content: center;
     justify-content: center;
     cursor: pointer;
     }
+
+
+
+
+
+
+    .cart {
+      width: 270px; 
+      height: 70px; 
+      background-color: red; 
+      color: white; 
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 600; 
+      font-size: 20px; 
+      border: none; 
+      border-radius: 12px; 
+      justify-content: center;
+      cursor: pointer;
+      }
+      
+      .cart:hover {
+      background-color: darkred
+      }
+  
+      .popupcart {
+        width: 400px;
+        background-color: #E87E5B;
+        border-radius: 10px;
+        border-color: #D32D4F;
+        position: absolute;
+        top: 670%;
+        left: 40%;
+        font-family: 'Poppins', sans-serif;
+        transform: translate(-50%, -55%) scale (0.1);
+        text-align: center;
+        padding: 0 4px 4px;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+      }
+  
+      .openPopup{
+        visibility: visible;
+      }
+  
+  
+  
+      .popupcart .ErrorButton {
+      width: 135px; 
+      height: 35px; 
+      background-color: red; 
+      color: white; 
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 600; 
+      font-size: 20px; 
+      border: none; 
+      border-radius: 12px; 
+      justify-content: center;
+      cursor: pointer;
+      }
