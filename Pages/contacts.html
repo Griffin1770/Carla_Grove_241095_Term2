@@ -126,17 +126,41 @@
           
           <label for="msg">Message</label><br>
           <input type="text" id="field4" name="field4" placeholder="Hi! Id like to ask about..."><br>
+
+          <button class="btn-Form" type="submit" onclick="openPopup()">Submit</button>
           
-          <button type="submit" class="submit" onclick="openSubmitModal()" id="submit">Submit</button>
+          
+          <!---<button type="submit" class="submit" onclick="openSubmitModal()" id="submit">Submit</button>--->
       </form>
     </form>
       </div>
     </div>
     </div>
     
+    <div class="popup" id="popup">
+      <h2>Thank you!</h2>
+      <p>Your message has been received and we will reach out to you shortly!</p>
+      <button class="OkButton" type="button" onclick="closePopup()">Back</button>
+    </div>
+
+<script>
+let PopupForm = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("openPopup")
+}
+
+function closePopup(){
+  popup.classList.remove("openPopup")
+}
+
+</script>
 
 
-    <div class="modal" id="submitModal" tabindex="-1">
+
+
+
+    <!---<div class="modal" id="submitModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -151,7 +175,7 @@
           </div>
         </div>
       </div>
-  </div>
+  </div>-->
 
 
 

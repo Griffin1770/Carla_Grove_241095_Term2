@@ -32,6 +32,7 @@
           <li><a  href="contacts.html">Contact Us</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
+
         <form class="searchBar">
             <input type="text" placeholder="Search...">
             <button type="submit">Search</button>
@@ -53,6 +54,33 @@
 
         </div>
       </section>
+
+
+
+<section>
+
+<div class="wrapper">
+    <div id="searchContainer">
+        <input 
+        type="search"
+        id="searchInput"
+        placeholder="Search product here..."
+        />
+        <button id="search">Search</button> 
+</div>
+<div id="Buttons">
+    <button class="button-value" onclick="filterProduct('The Oppulence')">The Oppulence</button>
+    <button class="button-value" onclick="filterProduct('The Voyager')">The Voyager</button>
+    <button class="button-value" onclick="filterProduct('The Odyssey')">The Odyssey</button>
+    <button class="button-value" onclick="filterProduct('The Explorer')">The Explorer</button>
+    <button class="button-value" onclick="filterProduct('The Endeavor')">The Endeavor</button>
+</div>
+<div id="productsF"></div>
+</div>
+</div>
+</div>
+
+</section>
 
 
 
@@ -417,8 +445,7 @@
 
 
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="../Js/scripts.js"></script>
+
 
 
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -437,6 +464,8 @@
             </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../Js/scripts.js"></script>
 
 </body>
 </html>
