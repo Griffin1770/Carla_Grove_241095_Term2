@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML, CSS, Template, Bootstrap"> <!--search words-->
     <meta name="author" content="Carla Grove 241095">
 
-    <title>HTML Template </title>
+    <title>Red Planet Ventures </title>
 
     <!--Link bootstrap-->
     <!--Link javascript-->
@@ -29,7 +29,8 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a class="active" href="flights.html">Flights</a></li>
-          <li><a  href="contacts.html">Contact</a></li>
+          <li><a  href="contacts.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
         </ul>
         <form class="searchBar">
             <input type="text" placeholder="Search...">
@@ -47,7 +48,7 @@
            </div>
 
             <div class="flightHeader">
-                <img src="../assets/images/headerbackBack.png" width="100%">
+                <img src="../assets/images/headerbackBack.png">
                 </div>
 
         </div>
@@ -72,10 +73,15 @@
                 <h3>R25,000.00</h3>
                 <p>Embark on a a Mars vacation: red deserts, ancient relics, and towering canyons await. 
                     Enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos. 
-                    Unforgettable adventures beckon on the rust-coloured landscapes of the Red Planet.</a></p>
+                    Unforgettable adventures beckon on the rust-coloured landscapes of the Red Planet.</p>
 
-            <div class="marsButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButtonMars">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesMars(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="marsTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesMars(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -110,8 +116,13 @@
                     phenomena, and savor gourmet space cuisine. An unforgettable 
                     adventure awaits, blending luxury with cosmic exploration.</p>
 
-            <div class="neptuneButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesNeptune(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="neptuneTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesNeptune(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -146,8 +157,13 @@
                     surfing, comet chasing, and space excursions. Experience cosmic wonder 
                     in luxury, blending exploration with adventure.</p>
 
-            <div class="jupiterButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesJupiter(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="jupiterTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesJupiter(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -169,7 +185,7 @@
         <div class="saturn">
             <div class="saturnImg"> <img src="../assets/images/flightSaturn.png">
                 <div class="saturnOverlay">
-                    <p>The region around its north pole has a hexagonal-shaped pattern of clouds. Scientists think this may be a wave pattern in the upper clouds. The planet also has a vortex over its south pole that resembles a hurricane-like storm.  - <a href="https://space-facts.com/" class="SF">Space facts</a></p>
+                    <p>The region around its north pole has a hexagonal-shaped pattern of clouds. Scientists think this may be a wave pattern in the upper clouds. The planet also has a vortex over its south pole that resembles a hurricane-like storm. - <a href="https://space-facts.com/" class="SF">Space facts</a></p>
                   </div>
             </div>
 
@@ -183,8 +199,13 @@
                     amidst luxurious accommodations, where the thrill of discovery 
                     intertwines seamlessly with the excitement of adventure.</p>
 
-            <div class="saturnButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesSaturn(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="saturnTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesSaturn(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -220,8 +241,13 @@
                     accommodations and expert guides, discover the wonders of Uranus in a 
                     journey of a lifetime.</p>
 
-            <div class="uranusButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesUranus(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="uranusTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesUranus(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -240,6 +266,54 @@
 
 
     <section>
+        <div class="luna">
+            <div class="lunaImg"> <img src="../assets/images/flightMoon.png">
+                <div class="lunaOverlay">
+                    <p>The Moon has much weaker gravity than Earth, due to its smaller mass, so you would weigh about one sixth (16.5%) of your weight on Earth. This is why the lunar astronauts could leap and bound so high in the air. - <a href="https://space-facts.com/" class="SF">Space facts</a></p>
+                  </div>
+            </div>
+
+            <div class="lunaText1">
+                <h1>Moonlight Meander</h1>
+                <h3>R15,000.00</h3>
+                <p>Experience the ultimate lunar getaway with our "Moonlight Meander" 
+                    package. Depart Earth's atmosphere aboard the "Celestial Cruiser" for a 
+                    short but unforgettable journey to the Moon. Enjoy lunar walks, 
+                    breathtaking views of Earthrise, and stargazing under the moon's serene 
+                    glow. Immerse yourself in luxury accommodations amidst the tranquility 
+                    of space.</p>
+
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesMoon(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="moonTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesMoon(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
+                <button class="red-button">Book now</button>
+            </div>
+
+            <div class="lunaText2">
+                <p>SKU : SS451 </p>
+                <p>Shuttle : The Voyager </p>
+                <p>Tags : Moon, Commercial, Romantic</p>
+                <p>Date : 5 August - 12 August</p>
+            </div>
+
+            
+           
+
+            </div>
+        </div>
+
+        <button class="cart" onclick="openCartModal()">View Cart</button>
+           
+
+    </section>
+
+
+
+    <!-------<section>
         <div class="moon">
             <div class="moonImg"> <img src="../assets/images/flightMoon.png">
                 <div class="moonOverlay">
@@ -257,8 +331,13 @@
                     glow. Immerse yourself in luxury accommodations amidst the tranquility 
                     of space. </p>
 
-            <div class="moonButton">
-                <button class="purple-button">- 1 +</button>
+                    <div class="UpButton">
+                        <button type="button" class="btn minus" data-type="minus" data-field="quant[1]" onclick="decreasesMoon(); total()">-</button>
+                        <input type="text" name="quant[1]" class="form-control" id="moonTickets" value="0" min="0" max="30"/>
+                        <button type="button" class="btn plus" data-type="plus" data-field="quant[1]" onclick="increasesMoon(); total()">+</button>
+                    </div>
+
+                    <div class="BookButton">
                 <button class="red-button">Book now</button>
             </div>
 
@@ -267,19 +346,30 @@
                 <p>Shuttle : The Voyager </p>
                 <p>Tags : Moon, Commercial, Romantic</p>
                 <p>Date : 5 August - 12 August</p>
-            </div>
-
-            <div class="cartButton">
-                <button class="cart">View Cart</button>
-            </div>
-
-            </div>
-        </div>
-    </section>
+            </div>---->
 
 
+<section>
+
+<div class="Gallery">
+<div class="galleryText">
+<h2>Image Gallery</h2></div>
+<div class="imgGallery">
+    <img src="../assets/images/flighhtMars.png">
+    <img src="../assets/images/flightJupiter.png">
+    <img src="../assets/images/flightMoon.png">
+    <img src="../assets/images/flightNeptune.png">
+    <img src="../assets/images/flightSaturn.png">
+    <img src="../assets/images/flightUranus.png">
+</div>
+</div>
 
 
+
+
+</section>
+           
+           
 
 
 
@@ -298,8 +388,9 @@
                 <h2>Company</h2>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a class="active" href="../Pages/flights.html">Flights</a></li>
-                    <li><a href="../Pages/contacts.html">Contact Us</a></li>
+                    <li><a class="active" href="flights.html">Flights</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                   </ul>
             </div>
 
@@ -323,5 +414,29 @@
 
 
 </footer>
-    
 
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../Js/scripts.js"></script>
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="cartModalBody">
+
+            </div>
+            <div class="modalFooter">
+                <button type="button" class="shop" data-bs-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="checkout" onclick="checkout()" >Checkout</button>
+            </div>
+        </div>
+
+
+</body>
+</html>
